@@ -1,0 +1,9 @@
+Fase 1:
+- Editamos el programa 'Main.cpp' para ajustarlo al algoritmo asignado a nuestro grupo por el profesor.
+- Buscamos con los comandos 'apt search CImg' y 'apt search Xlib' para saber qué teníamos que descargar.
+- Instalamos 'CImg.h' con: 'sudo apt install cimg-dev'
+- Instalamos 'Xlib.h' con: 'sudo apt install libx11-dev'
+- Compilamos el programa con el comando 'make', que utiliza lo que pusimos en el archivo 'Makefile':
+	'g++ -o Main.exe Main.cpp -O2 -L/usr/X11R6/lib -lm -lpthread -lX11'
+	Esto lo obtuvimos de la página de CImg: 'http://cimg.eu/reference/group__cimg__overview.html'
+- Generamos un 'exe' que transforma la imagen a otra en escala de grises con el algoritmo que nos había dado el profesor.
